@@ -11997,7 +11997,7 @@ main {
 #rounded-blue-shape-header {
   position: absolute;
   z-index: -1;
-  left: 3em;
+  left: 0em;
   margin: 6em 0em 0em 0em;
   width: 100%;
   height: 70%;
@@ -12061,15 +12061,37 @@ main {
   box-shadow: 0px 0.5px 5px rgb(93, 93, 95);
 }
 
-#underline-nav .nav-link.header,
-.nav-link.active {
+.nav-link.slider {
   color: black;
   border-bottom: 2px solid rgb(251, 90, 16);
+  border-top: 0em;
+  border-right: 0em;
+  border-left: 0em;
   font-weight: normal;
+}
+.nav-link.slider:hover {
+  color: rgb(251, 90, 16);
+  border-bottom: 2px solid rgb(251, 90, 16);
 }
 
 .nav-link.header:hover {
   color: rgb(251, 90, 16);
+}
+
+.tab-pane.fade {
+  color: black;
+  gap: 1em;
+  font-weight: normal;
+  border-bottom: 0em;
+  color: black;
+}
+
+.myTab {
+  border-width: none;
+}
+
+.nav-item {
+  color: black;
 }
 
 #img-features {
@@ -12091,16 +12113,14 @@ main {
 #rounded-blue-shape-reverse {
   position: absolute;
   z-index: -1;
-  left: 6em;
-  margin-top: 3em;
-  width: 100%;
-  height: 35%;
+  right: 3em;
+  margin: 6em 0em 0em 0em;
 }
 @media (min-width: 768px) {
   #rounded-blue-shape-reverse {
     left: -5em;
     max-width: 60%;
-    max-height: 100vh;
+    max-height: 80%;
   }
 }
 @media (min-width: 992px) {
@@ -12258,7 +12278,6 @@ main {
 }
 
 .btn.btn-primary.more-info {
-  margin-top: 2em;
   margin-bottom: 2em;
   align-self: center;
   background-color: rgb(80, 58, 249);
@@ -12274,7 +12293,7 @@ main {
   width: 100%;
   margin: 0;
   padding: 0;
-  height: 80%;
+  height: 60%;
   background-color: rgb(80, 58, 249);
 }
 #footer-cont #users-p {
@@ -12335,11 +12354,9 @@ main {
 
 #dark-blue-navbar {
   display: flex;
-  flex-direction: column;
   width: 100%;
-  height: 90vh;
+  height: 50vh;
   background-color: rgb(40, 40, 77);
-  padding: 2em 0em 0em 0em;
   margin: 0em;
 }
 @media (min-width: 768px) {
@@ -12391,7 +12408,7 @@ main {
   stroke: white;
   display: flex;
   justify-content: center;
-  width: 90%;
+  align-self: center;
   height: 90%;
   margin: 2em 4em 2em 8em;
 }
@@ -12402,10 +12419,10 @@ main {
   align-self: flex-end;
 }
 
-.img-fluid.logo path {
-  fill: rgb(251, 90, 16);
-}
-
 #blue-logo path {
   fill: white;
+}
+
+.img-fluid.logo:hover {
+  filter: invert(53%) sepia(93%) saturate(5000%) hue-rotate(15deg) brightness(100%) contrast(100%);
 }/*# sourceMappingURL=main.css.map */
