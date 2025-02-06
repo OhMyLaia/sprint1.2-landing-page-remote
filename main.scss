@@ -17,6 +17,7 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 main {
@@ -48,6 +49,10 @@ main {
     @include media-breakpoint-up(lg) {
         width: 100%;
         height: 80%;
+        margin: 8em 0em 0em 0em;
+        left: 3em;
+        right: -50%;
+
     }
 }
 
@@ -66,19 +71,19 @@ main {
     width: 6em;
     border-radius: 0.5em 0.5em 0.5em 0.5em;
     border-color: $primary;
-    color: $primary;
-    background-color: white;
+    color: white;
+    background-color: $primary;
 
     &:hover {
         background-color: white;
-        border: 1px solid $myDarkGrey;
-        color: black;
+        border: 1px solid $primary;
+        color: $primary;
     }
 
     &:active {
         background-color: white;
-        border: 1px solid $myDarkGrey;
-        color: black;
+        border: 1px solid $primary;
+        color: $primary;
     }
 }
 
@@ -136,7 +141,7 @@ main {
 }
 
 .myTab {
-    border-width: none;
+    border: none;
 }
 
 .nav-item {
@@ -434,9 +439,9 @@ main {
     // justify-content: space-between;
     // align-items: center;
     width: 100%;
-    height: 50vh;
+    height: 40vh;
     background-color: $myDarkBlue;
-    // padding: 2em 0em 0em 0em;
+    padding: 2em 0em 0em 0em;
     margin: 0em;
 
     @include media-breakpoint-up(md) {
@@ -448,52 +453,46 @@ main {
     }
 }
 
-#dark-blue-nav-links {
-
-    @include media-breakpoint-up(md) {
-        font-size: small;
-        font-weight: lighter;
-        gap: 2em;
-    }
-
-    @include media-breakpoint-up(lg) {
-        font-size: small;
-        font-weight: lighter;
-        gap: 2em;
-    }
-}
-
-.nav-link {
-    margin-bottom: 1em;
-    margin-top: 2em;
-    color: white;
-
-    @include media-breakpoint-up(md) {
-        margin-bottom: 4em;
-    }
-
-    @include media-breakpoint-up(lg) {
-        margin-bottom: 4em;
-    }
+#dark-blue-nav-links a {
 
     &:hover {
-        color: $myTomato;
+        color: $myTomato !important;
+    }
+
+    @include media-breakpoint-up(md) {
+        font-size: small;
+        font-weight: lighter;
+        gap: 2em;
+        margin-bottom: 4em;
+    }
+
+    @include media-breakpoint-up(lg) {
+        font-size: small;
+        font-weight: lighter;
+        gap: 2em;
+        margin-bottom: 4em;
     }
 }
 
-#blue-logo {
-    stroke: white;
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    height: 90%;
-    margin: 2em 4em 2em 8em;
-}
+// #dark-blue-nav-links .nav-link {
+
+
+
+//     @include media-breakpoint-up(md) {
+//         display: flex;
+//         margin-bottom: 4em;
+//         align-items: end;
+//         justify-content: end;
+//     }
+
+//     @include media-breakpoint-up(lg) {
+//         margin-bottom: 4em;
+//     }
+
+// }
 
 .img-fluid.logo {
-    padding: 0.3em;
-    margin-bottom: 2em;
-    align-self: flex-end;
+    padding: 0.5em;
 }
 
 #blue-logo path {

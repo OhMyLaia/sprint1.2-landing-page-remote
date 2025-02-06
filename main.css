@@ -11973,6 +11973,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 main {
@@ -12006,6 +12007,9 @@ main {
   #rounded-blue-shape-header {
     width: 100%;
     height: 80%;
+    margin: 8em 0em 0em 0em;
+    left: 3em;
+    right: -50%;
   }
 }
 
@@ -12024,18 +12028,18 @@ main {
   width: 6em;
   border-radius: 0.5em 0.5em 0.5em 0.5em;
   border-color: rgb(80, 58, 249);
-  color: rgb(80, 58, 249);
-  background-color: white;
+  color: white;
+  background-color: rgb(80, 58, 249);
 }
 .btn-outline-primary:hover {
   background-color: white;
-  border: 1px solid rgb(93, 93, 95);
-  color: black;
+  border: 1px solid rgb(80, 58, 249);
+  color: rgb(80, 58, 249);
 }
 .btn-outline-primary:active {
   background-color: white;
-  border: 1px solid rgb(93, 93, 95);
-  color: black;
+  border: 1px solid rgb(80, 58, 249);
+  color: rgb(80, 58, 249);
 }
 
 .nav-link.header {
@@ -12087,7 +12091,7 @@ main {
 }
 
 .myTab {
-  border-width: none;
+  border: none;
 }
 
 .nav-item {
@@ -12355,8 +12359,9 @@ main {
 #dark-blue-navbar {
   display: flex;
   width: 100%;
-  height: 50vh;
+  height: 40vh;
   background-color: rgb(40, 40, 77);
+  padding: 2em 0em 0em 0em;
   margin: 0em;
 }
 @media (min-width: 768px) {
@@ -12370,53 +12375,28 @@ main {
   }
 }
 
+#dark-blue-nav-links a:hover {
+  color: rgb(251, 90, 16) !important;
+}
 @media (min-width: 768px) {
-  #dark-blue-nav-links {
+  #dark-blue-nav-links a {
     font-size: small;
     font-weight: lighter;
     gap: 2em;
-  }
-}
-@media (min-width: 992px) {
-  #dark-blue-nav-links {
-    font-size: small;
-    font-weight: lighter;
-    gap: 2em;
-  }
-}
-
-.nav-link {
-  margin-bottom: 1em;
-  margin-top: 2em;
-  color: white;
-}
-@media (min-width: 768px) {
-  .nav-link {
     margin-bottom: 4em;
   }
 }
 @media (min-width: 992px) {
-  .nav-link {
+  #dark-blue-nav-links a {
+    font-size: small;
+    font-weight: lighter;
+    gap: 2em;
     margin-bottom: 4em;
   }
-}
-.nav-link:hover {
-  color: rgb(251, 90, 16);
-}
-
-#blue-logo {
-  stroke: white;
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  height: 90%;
-  margin: 2em 4em 2em 8em;
 }
 
 .img-fluid.logo {
-  padding: 0.3em;
-  margin-bottom: 2em;
-  align-self: flex-end;
+  padding: 0.5em;
 }
 
 #blue-logo path {
