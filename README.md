@@ -38,7 +38,9 @@
   
   🛠️ Install
   
-    Clone this repo -> git clone https://github.com/OhMyLaia/1.1-layouts-level1 Access to project directory -> Install dependencies -> /no dependencies yet/
+    Clone this repo -> git clone https://github.com/OhMyLaia/sprint1.2-landing-page-remote.git
+    Access to project directory -> cd sprint1.2-landing-page-remote
+    Install dependencies -> npm install /or/ npm i
 
 ▶️ Execution:
 
@@ -56,7 +58,7 @@
   
   Fork the repository and clone it locally.
   Create a new branch for your feature: git checkout -b feature/my-feature.
-  Commit your changes: git add . && git commit -m "Describe your changes".
+  Commit your changes: git add * && git commit -m "Describe your changes".
   Push the branch: git push origin feature/my-feature.
   Open a Pull Request and wait for review 🫡
   
